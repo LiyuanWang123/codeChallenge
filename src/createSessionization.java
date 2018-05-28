@@ -21,14 +21,12 @@ public class createSessionization {
 	
 	public static String currentDate;
 	public static int currentTime;
-	
+	public static String path = "/home/liyuan";
 	public static void main(String[] args) {
 		//Initialize user list
 		userList = new ArrayList<User>();
 		
 		//parameter for setting up writer
-		Charset charset = Charset.forName("US-ASCII");
-    	Path path = Paths.get("/home/liyuan/codeChallenge/output/sessionization.txt");
     	BufferedWriter writer = null;
     	
     	//parameter for setting up reader
@@ -38,10 +36,10 @@ public class createSessionization {
 		readActiveTime();
 		
 		try{
-    		writer = new BufferedWriter(new FileWriter("/home/liyuan/codeChallenge/output/sessionization.txt"));
+    		writer = new BufferedWriter(new FileWriter(path + "/codeChallenge/output/sessionization.txt"));
 		    try {
 		    	//read log.csv data
-		        csvReader = new BufferedReader(new FileReader("/home/liyuan/codeChallenge/input/log.csv"));
+		        csvReader = new BufferedReader(new FileReader(path + "/codeChallenge/input/log.csv"));
 		        String line=null;	 
 		        
 		        //skip the first line
@@ -146,7 +144,7 @@ public class createSessionization {
 	public static void readActiveTime() {
 		BufferedReader timeReader = null;
 		try {
-	        timeReader = new BufferedReader(new FileReader("/home/liyuan/codeChallenge/input/inactivity_period.txt"));
+	        timeReader = new BufferedReader(new FileReader(path + "/codeChallenge/input/inactivity_period.txt"));
 	        inactivityTime = Integer.parseInt(timeReader.readLine());
 	        //System.out.println(inactivityTime +"\n");
 		} catch (Exception e) {
