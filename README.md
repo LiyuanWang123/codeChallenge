@@ -7,6 +7,7 @@ I used java to solve this code challenge. Firstly it reads the given inactivity_
 Dependencies
 
 1.Eclipse on Win10 as programming platform
+
 2.Linux Ubuntou 18.04 LTS to edit and test run.sh and java files
 
 Run Instruction
