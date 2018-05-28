@@ -18,4 +18,4 @@ Run Instruction
 1. Download the codeChallenge repo
 2. Change the path in run.sh to where you downloaded the repo on your Linux system (path to parent foldere of codeChallenge folder).
 3. Change static varieble path in createSessionization.java to where you downloaded the repo on your Linux system (path to parent foldere of codeChallenge folder).
-4. At last, "cd to parent folder of codeChallenge" and execure run.sh by "sh run.sh". The output file is in output folder as sessionization.txt.
+4. At last, cd to parent folder of codeChallenge and execure run.sh by "sh run.sh". The output file is in output folder as sessionization.txt.
